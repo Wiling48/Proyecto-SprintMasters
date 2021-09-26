@@ -1,141 +1,124 @@
-* {
-    box-sizing: border-box;
-  } 
-  
-  body {
-    font-family:sans-serif;
-    padding: 18px;
-    background: rgb(235, 235, 247);
-  }
-  
-/* Estilo caja_logo*/
-div#boxi {
-  margin: 2px;  /* margen exterior de la caja respecto a las demas cajas(aplicado sobre los 4 lados de la caja)*/
-  border: auto; /* borde de la caja, anchura y color */
-  padding: 2px; /*borde interior de la caja respecto asu contenido interno(aplicado sobre los 4 lados) */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
-img#foto {
-  height: auto; /* alto de la imagen */
-  width: auto; /* ancho de la imagen */
+ 
+body{
+  background: #f1f1f1;
 }
-div#caja_usuario {
+ 
+.container{
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.login-container{
+  display: flex;
+  width: 850px;
+  height: auto;
+  background-image: linear-gradient(to bottom right, #1ab6b6, #4cac6e);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .8);
+}
+.img h1{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+ 
+.register, .login{
   float: right;
-  height: 200px; /* alto de la caja */
-  width: 200px;
-  margin: 150px;  /* margen exterior de la caja respecto a las demas cajas(aplicado sobre los 4 lados de la caja)*/
-  border: auto; /* borde de la caja, anchura y color */
-  padding: 2px; /*borde interior de la caja respecto asu contenido interno(aplicado sobre los 4 lados) */
+  flex: 1;
 }
-div#usuario{
-  background-color: blue;
-  float: left;
-  height: auto; /* alto de la caja */
-  width: auto;
-  margin: 3px;  /* margen exterior de la caja respecto a las demas cajas(aplicado sobre los 4 lados de la caja)*/
-  border: 1px solid blue; /* borde de la caja, anchura y color */
-  padding: 2px;
+ 
+.register{
+  padding: 60px;
+  position: relative;
 }
-div#contraseña{
-  background-color: blue;
-  float: left;
-  height: auto; /* alto de la caja */
-  width: auto;
-  margin: 3px;  /* margen exterior de la caja respecto a las demas cajas(aplicado sobre los 4 lados de la caja)*/
-  border: 1px solid blue; /* borde de la caja, anchura y color */
-  padding: 2px;
+ 
+.register h2{
+
+  color: white;
+  margin-bottom: 30px;
 }
-div#login{
-  background-color: brown;
-  height: auto; /* alto de la caja */
+ 
+.register input{
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 25px;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom: 1px solid #a8a8a8;
+  color: #333;
+}
+ 
+.register input:active,
+.register input:focus{
+  outline: none;
+}
+ 
+.register .submit  {
+  width: 250px;
+  padding: 10px;
+  background: #f17108;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  border-color: #f17108;
+  
+}
+.register .for {
   width: auto;
+  
+  text-align:right;
+  padding: 10px;
+  color: #fff;
+  font-size: 10px;
+  
   
 }
 
+ /*
+.register::after{
+  content: ">";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 50%;
+  right: -23px;
+  padding: 10px;
+  text-align: center;
+  font-size: 19px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  box-shadow: -1px 1px 3px 1px rgba(0, 0, 0, .2);
+  color: #7c7c7c;
+} */
+ 
 
-
-  
-
-
-
-
-  /* Style the top navigation bar */
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  /* Style the topnav links */
-  .topnav a {
-    float: left;
+ 
+@media only screen and (max-width: 540px){
+  .login-container{
     display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
   }
-  
-  /* Change color on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+ 
+  .register, .login{
+    flex: none;
   }
-  
-  /* Create two unequal columns that floats next to each other */
-  /* Left column */
-  .leftcolumn {   
-    float: left;
-    width: 75%;
+ 
+  .register::after{
+    top: unset;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
   }
-  
-  /* Right column */
-  .rightcolumn {
-    float: left;
-    width: 25%;
-    background-color: #f1f1f1;
-    padding-left: 20px;
-  }
-  
-  /* Fake image */
-  .fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-  }
-  
-  /* Add a card effect for articles */
-  .card {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Footer */
-  .footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    margin-top: 20px;
-  }
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
-      width: 100%;
-      padding: 0;
-    }
-  }
-  
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
-    .topnav a {
-      float: none;
-      width: 100%;
-    }
-  }
+}
