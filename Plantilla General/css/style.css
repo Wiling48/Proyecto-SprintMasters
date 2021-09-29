@@ -100,4 +100,12 @@ body { /* configuracion del body*/
     cursor: pointer;
     margin-top: 10px;     
 }
-
+.caja3{
+    float: right;
+    position: relative;
+    display: flex;
+    width: 1166px;
+    height: 500px;
+    background-color: #e63048;
+    margin-top: -500px;
+}
