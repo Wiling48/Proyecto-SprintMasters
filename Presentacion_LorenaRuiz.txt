@@ -1,0 +1,6 @@
+Mi nombre es Lorena Ruiz, tengo 27 años,
+vivo en Bogotá, hago parte del equipo SprintMasters
+de desarrolladores de la Universidad De Antioquia, 
+estamos trabajando en la construcción de una aplicación 
+software que permita controlar las ventas físicas y 
+virtuales de una empresa de manufactura.
