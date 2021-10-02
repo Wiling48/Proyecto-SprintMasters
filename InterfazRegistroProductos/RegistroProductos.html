@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link de Bootstrap V5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <!--Link de style.css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@200&display=swap" rel="stylesheet">
+    <title>RegistroPro</title><!--COLOCAR EL NOMBRE DE SU PAGINA-->
+</head>
+<body>
+   <!--Inicio de barra de navegación-->
+   <nav class="navbar navbar-expand-lg navbar navbar-dark" style="background-color: #074943;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SPRINTMASTERS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Usuarios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ventas</a>
+          </li>
+          <li class="nav-item"></li>
+            <a class="nav-link" href="#">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Registro de productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Estado de compra</a>
+          </li>
+        </ul>
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button type="button" class="btn btn-outline-light">Buscar</button>
+        </form> -->
+        </button>
+        <button type="button" class="btn btn-outline-light">Cerrar Sesión</button>
+       
+
+      </div>
+    </div>
+  </nav><br><br>
+   <!--Fin de barra de navegación-->
+
+   <!--Formularios-->
+<div class="container">
+<form class="row g-3">
+  <h1>Registre su producto</h1>
+      <div class="col-md-6">
+          <label for="inputNombreProducto" class="form-label">Nombre del Producto</label>
+          <input type="text" class="form-control" id="inputNombreProducto"placeholder="Nombre del Producto">
+      </div>
+      <div class="col-md-4">
+          <label for="inputIdProducto" class="form-label"> # Identificador del producto</label>
+          <input type="number" class="form-control" id="inputIdProducto"placeholder="# Identificador del producto">
+      </div>
+      <div class="col-md-2">
+          <label for="inputState" class="form-label">Estado del producto</label>
+          <select id="inputState" class="form-select">
+            <option selected>Estado del producto</option>
+            <option>Disponible</option>
+            <option>No Disponible</option>
+           </select>
+      </div>
+      <label for="inputGroupFile02" class="form-label">Cargue la imagen del producto</label>
+      <div class="input-group mb-3">
+        <input type="file" class="form-control" id="inputGroupFile02">
+        <label class="input-group-text" for="inputGroupFile02">Cargar</label>
+      </div>
+      <div class="col-12">
+        <label for="inputDescripcion" class="form-label">Descripción</label>
+        <textarea class="form-control" id="inputDescripcion" rows="3"></textarea>
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">Ciudad de Ubicación</label>
+        <input type="text" class="form-control" id="inputCity"placeholder="Ciudad de ubicación del Producto">
+      </div>
+      <div class="col-md-4">
+        <label for="inputValorProducto" class="form-label">Valor del producto</label>
+        <input type="number" class="form-control" id="inputValorProducto">
+      </div>
+      <div class="col-md-2">
+        <label for="inputState" class="form-label">Moneda</label>
+        <select id="inputState" class="form-select">
+          <option selected>Moneda</option>
+          <option>COP</option>
+          <option>USD</option>
+        </select>
+      </div>
+      <div class="col-6">
+        <button type="submit" class="btn btn-success">Registrar</button>
+      </div>
+      <div class="col-6">
+        <button type="submit" class="btn btn-success">Cancelar</button>
+      </div>
+    </div>
+    </form><br>
+<!--Formularios-->
+
+   <!--Inicio de carrusel--><!--ESTO ES POR SI LO QUIEREN UTILIZAR-->
+   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/Datacenter.png" class="d-block w-100" alt="...">
+      </div>
+       <div class="carousel-item">
+        <img src="img/tecno.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/sala de juntas.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div><br><br>
+<!--Fin de carrusel-->
+     <!--Footer-->
+   <section class="">
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #074943;">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: CTA -->
+        <section class="">
+          <p class="d-flex justify-content-center align-items-center">
+            <span class="me-3" style="background-color: #074943;">Contactanos</span>
+          </p>
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-white">
+		leidylorena9407@gmail.com</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">wilington48@gmail.com</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">jamermartinez@hotmail.com</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">luxajag@gmail.com</a>
+          </li>
+	  <li>
+            <a href="#!" class="text-white">arf1993.11@gmail.com</a>
+          </li>
+        </ul>
+        </section>
+        <!-- Section: CTA -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white">sprintmasters.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+
+   <!--Footer-->
+</body>
+</html>
