@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link de Bootstrap V5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <!--Link de style.css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@200&display=swap" rel="stylesheet">
+    <title>Estado de Compra</title><!--COLOCAR EL NOMBRE DE SU PAGINA-->
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark" style="background-color: #074943;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">SPRINTMASTERS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Usuarios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ventas</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link" href="#">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Registro de productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Estado de compra</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button type="button" class="btn btn-outline-light">Buscar</button>
+            </form>
+            </button>
+            <button type="button" class="btn btn-outline-light">Cerrar Sesión</button>
+           
+    
+          </div>
+        </div>
+      </nav><br><br>
+
+      <!-- Sección final inicio plantilla -->
+
+<!-- Inicio formulario estado de compra -->                      
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  <a class="btn btn-primary" href="Estado_pedido.html">Estado del pedido</a> 
+  
+  </div>
+  
+
+</form>
+
+<h3>Datos del cliente</h3>
+<hr style="height: 4px;px;border: width 2px;;color: #074943;background-color: #074943">
+
+
+<form class= "row">
+  <div class="col-md-4">
+    <label for="inputname" class="form-label">Nombres:</label>
+    <input type="text" class="form-control" id="inputname">
+  </div>
+
+  <div class="col-md-4">
+    <label for="inputlastname" class="form-label">Apellidos:</label>
+    <input type="text" class="form-control" id="inputlastname">
+  </div>
+
+ 
+  <div class="col-md-4">
+    <label for="inputIdentificacion" class="form-label">Identificacion</label>
+    <select id="inputldentificacion" class="form-select">
+      <option selected>Seleccione tipo</option >
+      <option>Cédula de ciudadanía</option>
+      <option>Cédula de Extranjería</option>
+      <option>NIT</option>
+      <option>Pasaporte</option>
+    </div>
+  
+      
+      <br>
+
+    <div class="col-4">
+
+      <label for="inputNumero" class="form-label">Número</label> 
+      <input type="number" class="form-control" id="inputNumero" placeholder=" Digite su Identificacion">       
+    </div>
+    
+
+  
+  <div class="col-8">
+    <label for="inputemail" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputemail" placeholder="Digite su @"> 
+  </div>
+  
+
+  <h3>Datos de Envío</h3>
+
+  <hr style="height: 4px;px;border: width 2px;;color: #074943;background-color: #074943">
+
+  <div class="col-8">
+    <label for="inputDirección" class="form-label">Dirección</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder=" Digite su dirección">
+  </div>
+  
+  <div class="col-8">
+    <label for="exampleFormControlTextarea1" class="form-label">Información adicional</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ejemplo: Oficina, Apto, Casillero .... "></textarea>
+  </div>
+
+  
+  <div class="col-8"> <!-- Ciudades -->
+    <label for="Ciudades" class="control-label">Ciudades</label>
+    <select class="form-control" id="Ciudades">
+      <option value="">Seleccione la ciudad</option>
+      <option value="Arauca">Arauca</option>
+      <option value="Armenia">Armenia</option>
+      <option value="Barranquilla">Barranquilla</option>
+      <option value="Bogotá">Bogotá</option>
+      <option value="Bucaramanga">Bucaramanga</option>
+      <option value="Cali">Cali</option>
+      <option value="Cartagena">Cartagena</option>
+      <option value="Cúcuta">Cúcuta</option>
+      <option value="Florencia">Florencia</option>
+      <option value="Ibagué">Ibagué</option>
+      <option value="Leticia">Leticia</option>
+      <option value="Manizales">Manizales</option>
+      <option value="Medellín">Medellín</option>
+      <option value="Mitú">Mitú</option>
+      <option value="Mocoa">Mocoa</option>
+      <option value="Montería">Montería</option>
+      <option value="Neiva">Neiva</option>
+      <option value="Pasto">Pasto</option>
+      <option value="Pereira">Pereira</option>
+      <option value="Popayán">Popayán</option>
+      <option value="Puerto Carreño">Puerto Carreño</option>
+      <option value="Puerto Inírida">Puerto Inírida</option>
+      <option value="Quibdó">Quibdó</option>
+      <option value="Riohacha">Riohacha</option>
+      <option value="San Andrés">San Andrés</option>
+      <option value="San José del Guaviare">San José del Guaviare</option>
+      <option value="Santa Marta">Santa Marta</option>
+      <option value="Sincelejo">Sincelejo</option>
+      <option value="Tunja">Tunja</option>
+      <option value="Valledupar">Valledupar</option>
+      <option value="Villavicencio">Villavicencio</option>
+      <option value="Yopal">Yopal</option>
+    </select>                    
+</div>
+    
+
+<div class="col-8" <!-- Departamentos -->
+  <label for="Departamentos" class="control-label">Departamentos</label>
+  <select class="form-control" id="Departamentos">
+  
+    <option value = ""> Seleccione el departamento</option>
+    <option value = "Amazonas">Amazonas</option>
+    <option value = "Antioquia">Antioquia</option>
+    <option value = "Arauca">Arauca</option>
+    <option value = "Atlántico">Atlántico</option>
+    <option value = "Bolívar">Bolívar</option>
+    <option value = "Boyacá">Boyacá</option>
+    <option value = "Caldas">Caldas</option>
+    <option value = "Caquetá">Caquetá</option>
+    <option value = "Casanare">Casanare</option>
+    <option value = "Cauca">Cauca</option>
+    <option value = "Cesar">Cesar</option>
+    <option value = "Chocó">Chocó</option>		            
+    <option value = "Córdoba">Córdoba</option>
+    <option value = "Cundinamarca">Cundinamarca</option>
+    <option value = "Guainía">Guainía</option>
+    <option value = "Guaviare">Guaviare</option>
+    <option value = "Huila">Huila</option>
+    <option value = "La Guajira">La Guajira</option>
+    <option value = "Magdalena">Magdalena</option>
+    <option value = "Meta">Meta</option>
+    <option value = "Nariño">Nariño</option>
+    <option value = "Norte de Santander">Norte de Santander</option>
+    <option value = "Putumayo">Putumayo</option>                
+    <option value = "Quindío">Quindío</option>  
+    <option value = "Risaralda">Risaralda</option>
+    <option value = "San Andrés y Providencia">San Andrés y Providencia</option>
+    <option value = "Santander">Santander</option>
+    <option value = "Sucre">Sucre</option>
+    <option value = "Tolima">Tolima</option>
+    <option value = "Valle del Cauca">Valle del Cauca</option>
+    <option value = "Vaupés">Vaupés</option>
+    <option value = "Vichada">Vichada</option>
+    </select>
+
+
+    <div class="col-8">
+      <label for="inputBarrio" class="form-label">Barrio</label>
+      <input type="text" class="form-control" id="inputBarrio" placeholder="Ingrese su barrio">
+    </div>
+
+  <!-- <div class="col-md-2"> -->
+    <div class="col-8">
+    <label for="inputCodigoPostal" class="form-label">Código Postal</label>
+    <input type="text" class="form-control" id="inputCodigoPostal" placeholder=" Ingrese su codigo postal">
+  </div>
+  
+  <br>
+  <br>
+  <!--// Boton Cerrar y Guardar Formulario -->
+  <div class="col-12">
+
+    <button class="btn btn-success" type="submit">Guardar</button>
+    <button class="btn btn-danger" type="submit">Cancelar</button>
+  </div>
+
+  
+</form>
+
+
+
+<!-- Sección de vista final plantilla -->
+    </div> <br>
+    <br> <br> <br> <br>
+    <section class="">
+      <!-- Footer -->
+      <footer class="text-center text-white" style="background-color: #074943;">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: CTA -->
+          <section class="">
+            <p class="d-flex justify-content-center align-items-center">
+              <span class="me-3" style="background-color: #074943;">Contactanos</span>
+            </p>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">leidylorena9407@gmail.com</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">wilington48@gmail.com</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">jamermartinez@hotmail.com</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">luxajag@gmail.com</a>
+            </li>
+      <li>
+              <a href="#!" class="text-white">arf1993.11@gmail.com</a>
+            </li>
+          </ul>
+          </section>
+          <!-- Section: CTA -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2021 Copyright:
+          <a class="text-white">sprintmasters.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </section>
+  
+     <!--Footer-->
+  </body>
+<!--Formularios-->
+</html>
